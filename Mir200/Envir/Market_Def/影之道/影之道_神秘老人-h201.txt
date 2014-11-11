@@ -1,0 +1,9 @@
+[@main]
+你想返回沙巴克皇宫吗？\
+嘿嘿嘿....\\
+ <回沙巴克皇宫/@choulao>\
+ <离开/@exit>
+[@choulao]
+#IF
+#ACT
+mapmove 0150

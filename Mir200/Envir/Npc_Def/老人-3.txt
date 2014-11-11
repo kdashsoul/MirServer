@@ -1,0 +1,16 @@
+;1.76仿盛大基础版本
+[@main]
+你想知道最近沙吧克的攻城战役吗?\ \
+
+<查看./@aboutwar>\                                                      
+
+[@aboutwar]
+察看关于最近的攻城战役纪录\
+战役开始时间： <$CASTLEWARDATE> , 晚上8:00开始。\ \
+
+<详细情况：/@listwar>\
+<关闭./@exit>\
+
+[@listwar]
+<$LISTOFWAR>\
+<知道了./@exit>\

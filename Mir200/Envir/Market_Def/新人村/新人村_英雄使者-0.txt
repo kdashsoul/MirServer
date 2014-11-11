@@ -1,0 +1,3 @@
+(@@createhero)
+[@main]
+#CALL [英雄\英雄服务.txt] @英雄服务

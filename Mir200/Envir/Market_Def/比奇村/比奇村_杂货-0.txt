@@ -1,0 +1,7 @@
+(@buy @sell @repair @s_repair )
+%100
++30
++3
++25
+[@main]
+#CALL [商人\杂货铺.txt] @杂货铺

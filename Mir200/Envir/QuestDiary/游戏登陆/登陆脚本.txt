@@ -1,0 +1,16 @@
+;┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+;巩义传奇 www.atian68.com  制作人:贺庆  QQ: 385079136  电话:15890020190  
+;┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+[@登陆设置]
+{
+#IF
+ISNEWHUMAN
+#ACT
+SENDMSG 0 :欢迎新玩家〖%s〗来到了<$SERVERNAME>!
+break
+#IF
+ISCASTLEMASTER
+#ACT
+SENDMSG 0 号令天下的沙城主『<$USERNAME>』进入了<$SERVERNAME>!
+break
+}

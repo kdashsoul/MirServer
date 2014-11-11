@@ -1,0 +1,6 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+CREDITPOINT + 1
+SENDMSG 0 玩家<$USERNAME>消灭了钳虫巢穴的暗之沃玛教主，获得了1点声望! 

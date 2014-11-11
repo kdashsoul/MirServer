@@ -1,0 +1,88 @@
+[@英雄服务]
+{
+<[创建英雄]/@@CreateHero> \
+<[删除英雄]/@删除英雄> \ 
+<[升级]/@升级> \
+
+
+[@升级]
+#IF
+#ACT
+CHANGELEVEL + 1
+H.CHANGELEVEL + 1
+
+[@CreateHero]
+#if
+CheckHaveHero
+#ACT
+#SAy
+你已经领取了英雄!!\ \
+<返回/@main>
+#Elsesay
+选择需要的英雄职业性别.\
+<返回/@main>\ \
+<男英雄战士/@CREATEHERO_WARR_MAN> <女英雄战士/@CREATEHERO_WARR_WOM>\
+<男英雄法师/@CREATEHERO_WIZA_MAN> <女英雄法师/@CREATEHERO_WIZA_WOM>\
+<男英雄道士/@CREATEHERO_TAOS_MAN> <女英雄道士/@CREATEHERO_TAOS_WOM>\
+<关闭/@exit>
+
+[@CREATEHERO_WARR_MAN]
+#Act
+CREATEHERO 0 0
+Goto @CreateingHero
+[@CREATEHERO_WARR_WOM]
+#Act
+CREATEHERO 0 1
+Goto @CreateingHero
+[@CREATEHERO_WIZA_MAN]
+#Act
+CREATEHERO 1 0
+Goto @CreateingHero
+[@CREATEHERO_WIZA_WOM]
+#Act
+CREATEHERO 1 1
+Goto @CreateingHero
+[@CREATEHERO_TAOS_MAN]
+#Act
+CREATEHERO 2 0
+Goto @CreateingHero
+[@CREATEHERO_TAOS_WOM]
+#Act
+CREATEHERO 2 1
+Goto @CreateingHero
+
+//返回消息
+[@HeroNameFilter]
+创建英雄失败，名字中包含禁止字符或长度超过14位字符……\\<关闭/@exit>
+
+[@CreateingHero]
+系统正在接受申请，请稍候……\
+<关闭/@exit>
+
+[@HaveHero]
+您已经有英雄了。\
+<关闭/@exit>
+
+[@SetHeroName]br> 请先给您的英雄取名字。\
+<关闭/@exit>
+
+[@删除英雄]
+是否确认删除英雄\
+<是，我确认删除英雄/@DelMyHero> <我考虑下/@exit>
+
+[@DelMyHero]
+#ACT
+DELETEHERO
+//返回消息
+
+[@NotHaveHero]
+你没有英雄。\\<关闭/@exit>
+
+[@LogOutHeroFirst]
+请将英雄设置下线！\\<关闭/@exit>
+
+}
+
+
+
+

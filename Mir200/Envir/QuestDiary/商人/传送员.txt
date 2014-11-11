@@ -1,0 +1,427 @@
+[@传送员]
+{
+欢迎光临!你可以在我这里享受以下服务.\
+请选择你要前往的地区:\
+┏━━━━┳━━━━┳━━━━┳━━━━┓\
+┃<城区传送/@ANQUAN>┃<险恶区域/@XIANE>┃<挑战幻境/@huan>┃<查看时间/@time>┃\
+┗━━━━┻━━━━┻━━━━┻━━━━┛\
+
+[@ANQUAN]
+#IF
+checklevelex > 6
+#SAY
+这里是<城区传送>服务,你必须给我2000金币的报酬!\
+┏━━━━┳━━━━┳━━━━┳━━━━┓\
+┃<比齐大城/@JIANAN>┃<毒蛇山谷/@FENGDI>┃<银杏小村/@XIAGU>┃<比奇村庄/@HAIBIN>┃\
+┣━━━━╋━━━━╋━━━━╋━━━━┫\
+┃<盟重土城/@YASHU>┃<苍月之岛/@HUANGCHENG>┃<封魔神谷/@JIANYU>┃<白 日 门/@SHADINDAO>┃\
+┗━━━━┻━━━━┻━━━━┻━━━━┛\
+#ELSESAY
+照你现在这个级别,我没什么能帮的上你!\
+请你练到7级再来找我吧，祝你好运!\
+
+
+[@JIANAN] 
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 333 268 
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@FENGDI] 
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 2 500 485
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@XIAGU] 
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 635 612 
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@HAIBIN] 
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 0 290 615 
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@YASHU] 
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 3 330 330 
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@HUANGCHENG]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000 
+mapmove 5 140 330
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JIANYU]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 4 240 200
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@SHADINDAO]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000 
+mapmove 11 180 325
+break 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+;------------------------------------
+
+[@XIANE]
+#IF
+checklevelex > 34
+#SAY
+这里是<险恶地区>服务，按照你的级别你可以前往以下地区:\
+当然你还得付给我3000金币的报酬!\
+┏━━━━┳━━━━┳━━━━┳━━━━┳━━━━┓\
+┃<沃玛三层/@JM7>┃<猪洞七层/@JM8>┃<祖玛七层/@JM5>┃<死亡棺材/@JM6>┃<抉择之地/@S6>┃\
+┣━━━━╋━━━━╋━━━━╋━━━━╋━━━━┫\
+┃<比齐矿区/@JN1>┃<蜈蚣洞穴/@JN2>┃<天然洞穴/@JM1>┃<牛魔四层/@JM2>┃<封魔矿区/@FENGMOKOU>┃\
+┣━━━━╋━━━━╋━━━━╋━━━━╋━━━━┫\
+┃<未知暗殿/@JXJDVE>┃<尸 魔 洞/@JM3>┃<骨 魔 洞/@JM4>┃<尸王大殿/@LM2>┃<沙城区域/@沙城区域>┃\
+┗━━━━┻━━━━┻━━━━┻━━━━┻━━━━┛\
+#ELSEACT
+goto @22
+
+[@22]
+#IF
+checklevelex > 21
+#SAY
+这里是<险恶地区>服务，按照你的级别35级前你可以前往以下地区:\ 
+当然你还得付给我3000金币的报酬!\
+┏━━━━┳━━━━┳━━━━┳━━━━┳━━━━┓\
+┃<沃玛二层/@S1>┃<猪洞一层/@S2>┃<祖玛三层/@S3>┃<赤月峡谷/@S5>┃<封魔矿区/@FENGMOKOU>┃\
+┣━━━━╋━━━━╋━━━━╋━━━━╋━━━━┫\
+┃<比齐矿区/@JN1>┃<蜈蚣洞穴/@JN2>┃<天然洞穴/@JM1>┃<牛魔一层/@NN7>┃<尸 魔 洞/@JM3>┃\
+┣━━━━╋━━━━╋━━━━┻━━━━┻━━━━┛\
+┃<骨 魔 洞/@JM4>┃<尸王大殿/@LM2>┃\
+┗━━━━┻━━━━┛\
+#ELSEACT
+goto @1
+
+[@1]
+#IF
+checklevelex > 6
+#SAY
+这里是<险恶地区>服务，按照你的级别22级前你只能前往以下地区:\ 
+当然你还得付给我3000金币的报酬!\
+┏━━━━┳━━━━┳━━━━┓\
+┃<比齐矿区/@JN1>┃<蜈蚣洞穴/@JN2>┃<天然洞穴/@JM1>┃\
+┣━━━━╋━━━━┻━━━━┛\
+┃<封魔矿区/@FENGMOKOU>┃\
+┗━━━━┛\
+#ELSESAY
+照你现在这个级别,我没什么能帮的上你!\
+请你练到7级再来找我吧，祝你好运!\
+
+
+[@JM7]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D024
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM8]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D716
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM5]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D5071 8 10
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM6]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D606
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@S6]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D1004
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JN1]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D401
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JN2]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D601
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM1]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove E001
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM2]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D2075
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@FENGMOKOU]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1 
+mapmove 4 138 69
+break
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JXJDVE]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove M001
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM3]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D2051
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@JM4]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D2061
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@LM2]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1 
+mapmove Q004
+break
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@沙城区域]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove 3 716 407
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@S1]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D023
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@S2]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D711
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@S3]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D503
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@S5]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D10011
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+[@NN7]
+#IF
+checkgold 3000
+#ACT
+take 金币 3000 
+give 回城卷 1
+mapmove D2071
+BREAK
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离 开/@exit> \
+
+;------------------------------------
+
+[@huan]
+移动到幻境需要10万金币。\
+支付这些钱，移动吗？\
+<移动/@移动> \ 
+<不/@exit> \
+<返 回/@Main>
+
+[@移动]
+#IF 
+checkgold 100000
+#ACT 
+take 金币 100000
+give 回城卷 1
+mapmove H001 73 67 
+#ELSESAY 
+你身上的钱不够！请准备好后再来。\ \ \
+<离开/@exit>\
+
+;------------------------------------
+
+[@time]
+请看右下角。\
+<返 回/@main>\
+}

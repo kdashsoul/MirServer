@@ -1,0 +1,862 @@
+;此脚为功能脚本，用于实现各种与脚本有关的功能
+(@@InPutInteger @@InPutString @@useitemname @@OffLineMsg @@dealgold)
+;----------------------------------------------------
+
+[@KillPlay]
+#ACT
+SendMsg 5 你杀人了?
+
+[@PlayLevelUp]
+#IF
+checkjob wizard
+CHECKLEVELEX = 7
+#ACT
+addskill 火球术
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 7
+#ACT
+addskill 基本剑术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 7
+#ACT
+addskill 治愈术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 9
+#ACT
+addskill 精神力战法
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 12
+#ACT
+addskill 抗拒火环
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 13
+#ACT
+addskill 诱惑之光
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 14
+#ACT
+addskill 施毒术
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 16
+#ACT
+addskill 地狱火
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 17
+#ACT
+addskill 雷电术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 18
+#ACT
+addskill 灵魂火符
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 19
+#ACT
+addskill 瞬息移动
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 19
+#ACT
+addskill 攻杀剑术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 19
+#ACT
+addskill 召唤骷髅
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 19
+#ACT
+addskill 大火球
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 20
+#ACT
+addskill 隐身术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 21
+#ACT
+addskill 集体隐身术
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 22
+#ACT
+addskill 爆裂火焰
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 22
+#ACT
+addskill 幽灵盾
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 24
+#ACT
+addskill 火墙
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 25
+#ACT
+addskill 神圣战甲术
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 25
+#ACT
+addskill 刺杀剑术
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 26
+#ACT
+addskill 疾光电影
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 26
+#ACT
+addskill 心灵启示
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 28
+#ACT
+addskill 困魔咒
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 28
+#ACT
+addskill 半月弯刀
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 30
+#ACT
+addskill 野蛮冲撞
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 30
+#ACT
+addskill 地狱雷光
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 31
+#ACT
+addskill 魔法盾
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 32
+#ACT
+addskill 圣言术
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 33
+#ACT
+addskill 群体治疗术
+break
+
+#IF
+checkjob warrior
+CHECKLEVELEX = 35
+#ACT
+addskill 烈火剑法
+break
+
+#IF
+checkjob wizard
+CHECKLEVELEX = 35
+#ACT
+addskill 冰咆哮
+break
+
+#IF
+checkjob taoist
+CHECKLEVELEX = 35
+#ACT
+addskill 召唤神兽
+break
+
+[@HeroLevelUp]
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 7
+#ACT
+H.addskill 英雄火球术
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 7
+#ACT
+H.addskill 英雄基本剑术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 7
+#ACT
+H.addskill 英雄治愈术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 9
+#ACT
+H.addskill 英雄精神战法
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 12
+#ACT
+H.addskill 英雄抗拒火环
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 13
+#ACT
+H.addskill 英雄诱惑之光
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 14
+#ACT
+H.addskill 英雄施毒术
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 16
+#ACT
+H.addskill 英雄地狱火
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 17
+#ACT
+H.addskill 英雄雷电术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 18
+#ACT
+H.addskill 英雄灵魂火符
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 19
+#ACT
+H.addskill 英雄瞬息移动
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 19
+#ACT
+H.addskill 英雄攻杀剑术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 19
+#ACT
+H.addskill 英雄召唤骷髅
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 19
+#ACT
+H.addskill 英雄大火球
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 20
+#ACT
+H.addskill 英雄隐身术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 21
+#ACT
+H.addskill 英雄集体隐身
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 22
+#ACT
+H.addskill 英雄爆裂火焰
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 22
+#ACT
+H.addskill 英雄幽灵盾
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 24
+#ACT
+H.addskill 英雄火墙
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 25
+#ACT
+H.addskill 英雄神圣战甲
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 25
+#ACT
+H.addskill 英雄刺杀剑术
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 26
+#ACT
+H.addskill 英雄疾光电影
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 26
+#ACT
+H.addskill 英雄心灵启示
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 28
+#ACT
+H.addskill 英雄困魔咒
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 28
+#ACT
+H.addskill 英雄半月弯刀
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 30
+#ACT
+H.addskill 英雄野蛮冲撞
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 30
+#ACT
+H.addskill 英雄地狱雷光
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 31
+#ACT
+H.addskill 英雄魔法盾
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 32
+#ACT
+H.addskill 英雄圣言术
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 33
+#ACT
+H.addskill 英雄群体治疗
+break
+
+#IF
+H.checkjob warrior
+H.CHECKLEVELEX = 35
+#ACT
+H.addskill 英雄烈火剑法
+break
+
+#IF
+H.checkjob wizard
+H.CHECKLEVELEX = 35
+#ACT
+H.addskill 英雄冰咆哮
+break
+
+#IF
+H.checkjob taoist
+H.CHECKLEVELEX = 35
+#ACT
+H.addskill 英雄召唤神兽
+break
+
+
+[@PlayDie]
+#IF
+ISDUMMY
+#ACT
+GMEXECUTE 复活 Self
+MAP 0
+break
+#ELSEACT
+#IF
+KILLBYHUM
+#ACT
+SENDMSG 1 提示:玩家【<$CURRRTARGETNAME>】在:%m(%x:%y)把玩家<$USERNAME>干掉了！
+#ELSEACT
+SENDMSG 1 提示:怪物【<$CURRRTARGETNAME>】在:%m(%x:%y)把玩家<$USERNAME>干掉了！
+
+;----------------------------------------------------
+
+[@STDMODEFUNC9]
+#IF
+gender woman
+#ACT
+HAIRSTYLE 1
+SENDMSG 7 发型已经变更! 
+BREAK
+#IF
+gender man
+#ACT
+HAIRSTYLE 1
+SENDMSG 7 发型已经变更! 
+BREAK
+
+[@STDMODEFUNC10]
+#IF
+gender woman
+#ACT
+HAIRSTYLE 0
+SENDMSG 7 发型已经变更! 
+BREAK
+#IF
+gender man
+#ACT
+HAIRSTYLE 0
+SENDMSG 7 发型已经变更! 
+BREAK
+
+[@STDMODEFUNC11]
+#IF
+#ACT
+KILLMONEXPRATE 200 7200
+Gmexecute showeffect 76
+SENDMSG 0 玩家「<$USERNAME>」使用双倍卷轴，获得了2小时双倍时间。
+
+
+[@STDMODEFUNC12]
+#IF
+#ACT
+KILLMONEXPRATE 200 3600
+Gmexecute showeffect 76
+SENDMSG 0 玩家「<$USERNAME>」使用双倍宝典(小)，获得了1小时双倍时间。
+
+
+[@STDMODEFUNC13]
+#IF
+#ACT
+KILLMONEXPRATE 200 10800
+Gmexecute showeffect 76
+SENDMSG 0 玩家「<$USERNAME>」使用双倍宝典(中)，获得了3小时双倍时间。
+
+
+[@STDMODEFUNC14]
+#IF
+#ACT
+KILLMONEXPRATE 200 21600
+Gmexecute showeffect 76
+SENDMSG 0 玩家「<$USERNAME>」使用双倍宝典(大)，获得了6小时双倍时间。
+
+
+[@StdModeFunc15]
+#IF
+#ACT
+Gmexecute showeffect 79
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc16]
+#IF
+#ACT
+Gmexecute showeffect 80
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc17]
+#IF
+#ACT
+Gmexecute showeffect 81
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc18]
+#IF
+#ACT
+Gmexecute showeffect 82
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc19]
+#IF
+#ACT
+Gmexecute showeffect 83
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc20]
+#IF
+#ACT
+Gmexecute showeffect 84
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc21]
+#IF
+#ACT
+Gmexecute showeffect 85
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+
+[@StdModeFunc41]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Delaygoto 2000 @庆典蛋糕1
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕1]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Delaygoto 2000 @庆典蛋糕2
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕2]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Delaygoto 2000 @庆典蛋糕3
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕3]
+#IF
+  small M3 60
+#Act
+  INC M3 2
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Delaygoto 2000 @庆典蛋糕4
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕4]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Delaygoto 2000 @庆典蛋糕5
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕5]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Delaygoto 2000 @庆典蛋糕6
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@庆典蛋糕6]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 85
+Delaygoto 2000 @庆典蛋糕
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放庆典蛋糕了!大家快去看拉
+#ELSEAct
+MOV M3 0
+
+[@StdModeFunc29]
+#IF
+#ACT
+mapmove 0 326 272
+
+[@StdModeFunc30]
+#IF
+#ACT
+mapmove 3 330 330
+
+[@StdModeFunc99]
+一： <记录当前坐标/@TAGMAPINFO1> <移动到/@PMOVE1> -> <$TAGMAPNAME1> <$TAGX1> <$TAGY1>\
+二： <记录当前坐标/@TAGMAPINFO2> <移动到/@PMOVE2> -> <$TAGMAPNAME2> <$TAGX2> <$TAGY2>\
+三： <记录当前坐标/@TAGMAPINFO3> <移动到/@PMOVE3> -> <$TAGMAPNAME3> <$TAGX3> <$TAGY3>\
+四： <记录当前坐标/@TAGMAPINFO4> <移动到/@PMOVE4> -> <$TAGMAPNAME4> <$TAGX4> <$TAGY4>\
+五： <记录当前坐标/@TAGMAPINFO5> <移动到/@PMOVE5> -> <$TAGMAPNAME5> <$TAGX5> <$TAGY5>\
+六： <记录当前坐标/@TAGMAPINFO6> <移动到/@PMOVE6> -> <$TAGMAPNAME6> <$TAGX6> <$TAGY6>\ \
+<成功传送后才会消失一点.安全无毒.放心使用>\ 
+[@PMOVE1]
+#ACT
+TAGMAPMOVE 1
+[@PMOVE2]
+#ACT
+TAGMAPMOVE 2
+[@PMOVE3]
+#ACT
+TAGMAPMOVE 3
+[@PMOVE4]
+#ACT
+TAGMAPMOVE 4
+[@PMOVE5]
+#ACT
+TAGMAPMOVE 5
+[@PMOVE6]
+#ACT
+TAGMAPMOVE 6
+[@TAGMAPINFO1]
+#ACT
+TAGMAPINFO 1
+GOTO @StdModeFunc99
+[@TAGMAPINFO2]
+#ACT
+TAGMAPINFO 2
+GOTO @StdModeFunc99
+[@TAGMAPINFO3]
+#ACT
+TAGMAPINFO 3
+GOTO @StdModeFunc99
+[@TAGMAPINFO4]
+#ACT
+TAGMAPINFO 4
+GOTO @StdModeFunc99
+[@TAGMAPINFO5]
+#ACT
+TAGMAPINFO 5
+GOTO @StdModeFunc99
+[@TAGMAPINFO6]
+#ACT
+TAGMAPINFO 6
+GOTO @StdModeFunc99
+
+[@RevMaster]
+对方想拜你为师，你是否想收此人为徒？ \ \
+『<同意/@ResposeMaster>』 \
+『<不同意/@ResposeMasterFail>』
+
+[@ResposeMaster]
+#IF
+#ACT
+master responsemaster1 ok
+close
+
+[@ResposeMasterFail]
+#if
+#act
+master responsemaster1 fail
+
+[@EndMaster]
+#if
+#act
+SENDMSG 0 %s完成了拜师收徒仪式!
+
+[@EndMasterFail]
+拜师失败！\ \
+〖<关闭/@exit>〗
+
+[@RevUnMaster]
+对方向你请求脱离师徒关系，你是否答应？ \ \
+『<我愿意/@ResposeUnMaster>』
+〖<退出/@Exit>〗
+
+[@ResposeUnMaster]
+#if
+#act 
+unmaster REQUESTUNMASTER MASTER
+
+[@PoseUnMasterEnd]
+呵呵，你已经与徒弟脱离师徒关系了！！！ \ \
+『<退出/@exit>』
+
+[@RequestUnMasterEnd]
+呵呵，你已经脱离师徒关系了！！！ \ \
+『<退出/@exit>』
+
+[@GroupItem0]
+#IF
+#ACT
+SENDMSG 5 圣战套装隐藏属性被激发,攻击提升15%!
+
+[@GroupItem1]
+#IF
+#ACT
+SENDMSG 5 法神套装隐藏属性被激发:魔法提升15%!
+
+[@GroupItem2]
+#IF
+#ACT
+SENDMSG 5 天尊套装隐藏属性被激发!道术提升15%!
+
+[@GroupItem3]
+#IF
+#ACT
+SENDMSG 5 属性生效:头盔一顶攻击上限增加1%!
+
+[@GroupItem4]
+#IF
+#ACT
+SENDMSG 5 属性生效:头盔一顶魔法上限增加1%!
+
+[@GroupItem5]
+#IF
+#ACT
+SENDMSG 5 属性生效:头盔一顶道术上限增加1%!
+
+[@GroupItem6]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:攻击上限增加3%，体力恢复增加1%魔法恢复增加1%。
+
+[@GroupItem7]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:攻击上限增加3%，体力恢复增加1%魔法恢复增加1%。
+
+[@GroupItem8]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:道术上限增加3%，体力恢复增加1%魔法恢复增加1%。
+
+[@GroupItem9]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:道术上限增加3%，体力恢复增加1%魔法恢复增加1%。
+
+[@GroupItem10]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:魔法上限增加3点，HP增加20%，体力恢复增加1%魔法恢复增加1%。
+
+[@GroupItem11]
+#IF
+#ACT
+SENDMSG 5 衣服属性生效:魔法上限增加3点，HP增加20%，体力恢复增加1%魔法恢复增加1%。
+
+[@CreateHeroOK]
+创建英雄成功\<关闭/@exit>
+
+[@HeroNameExists]
+英雄名称已被使用\<关闭/@exit>
+
+[@CreateHeroFail]
+创建英雄失败\<关闭/@exit>
+
+[@DeleteHeroFail]
+删除英雄失败\<关闭/@exit>
+
+[@DeleteHeroOK]
+删除英雄成功\<关闭/@exit>
+

@@ -1,0 +1,6 @@
+[@main]
+#IF
+CHECKLEVELEX > 0
+#ACT
+CREDITPOINT + 1
+SENDMSG 0 玩家<$USERNAME>消灭了困惑殿堂中的暗之双头血魔，获得了1点声望! 

@@ -1,0 +1,219 @@
+[@main]
+<我想拜师/@master>\
+<我想出师/@unmaster>\ \
+<离开/@exit>
+
+[@master]
+想拜师呀，你要拜的师父来了没有？\
+与你师父面对面站好，开始拜师。\ \
+<准备好了/@agree>\
+<我知道了/@exit>\ \ 
+<返回/@main>
+
+[@agree]
+;检查是不是已经是别人的师父
+#if
+   checkismaster
+#act
+   break
+#say
+没事别来这玩！！！\ \
+<返回/@main>
+
+;检查是不是已经拜师了
+#if
+   checkmaster
+#act 
+   break
+#say
+你都都已经拜了别人为师，怎么还拜师！！！ \ \
+<返回/@main>
+
+;检查对面的人物是不是别人的徒弟
+#if
+  checkposemaster
+#say
+你找了个什么人做师父，怎么现在还是别人的徒弟？\ \
+<返回/@main>
+#act
+  break
+
+;检查二个有没站好位置
+#if
+   checkposedir
+#elsesay
+你们二个面对面站好呀，不要乱动。\ \
+<返回/@main>
+#elseact
+  break
+
+#if
+  checklevel 40
+#say
+你都40多级了还要找师父？\ \
+<返回/@main>
+#act
+  break
+
+;检查对方等级
+#if
+  checkposelevel > 50
+#elsesay
+你找个什么师父呀，等级这么低？\ \
+<返回/@main>
+#elseact
+  break
+#act
+   master
+
+[@StartGetMaster]
+拜师仪式正式开始。\ \
+你是否确认拜师？\ \
+<确认/@RequestMaster>
+
+[@StartMaster]
+拜师仪式正式开始。\ \
+对方已经向你提出拜师请求。\ \
+
+
+[@RequestMaster]
+
+;检查所需物品
+#if 
+   checkitemw 力量戒指 1
+#elsesay
+你都没信物，怎么拜呀！！！\ \
+<返回/@main>
+#elseact
+   break
+
+#if
+#act
+   takew 力量戒指 1
+   master requestmaster
+
+[@WateMaster]
+你已向对方请求拜师，请耐心等待对方的答复。
+
+[@RevMaster]
+对方想拜你为师，你是否想收此人为徒？ \ \
+<同意/@ResposeMaster> \
+<不同意/@ResposeMasterFail>
+
+[@ResposeMaster]
+#if
+#act
+  master responsemaster ok
+
+[@ResposeMasterFail]
+#if
+#act
+  master responsemaster fail
+[@EndMaster]
+你们二个已经是师徒关系了。\ \
+<关闭/@exit>
+[@EndMasterFail]
+拜师失败！\ \
+<关闭/@exit>
+[@MasterDirErr]
+对方没站好位置
+
+[@MasterCheckDir]
+请站好位置\\
+
+[@HumanTypeErr]
+此人不可以做你的师父。
+
+
+
+
+
+
+;==========================================
+开始
+[@unmaster]
+#if
+   havemaster
+#act
+   unmaster
+#elsesay
+你都没师父，跑来做什么？？\ \
+<返回/@main>
+
+
+;=======================================================
+
+[@UnMasterCheckDir]
+按正常出师步骤，必须二个人对面对站好位置，\
+如果人来不了你只能选择强行出师了。\ \
+<我要强行出师/@fUnMaster>\
+<返回/@main>
+;=======================================================
+;对面位置不是人物时显示的信息
+[@UnMasterTypeErr]
+你对面站了个什么东西，怎么不太象人来的。\ \
+<返回/@main>
+[@UnIsMaster]
+必须由徒弟发出请求！！！\ \
+<返回/@main>
+[@UnMasterError]
+不要来捣乱！！！\ \
+<返回/@main>
+;=======================================================
+;开始程序后，双方显示的信息
+[@StartUnMaster]
+出师仪式现在开始！！！\ \
+是否确定真的要脱离师徒关系？\ \
+<确定/@RequestUnMaster>
+[@WateUnMaster]
+出师仪式现在开始！！！\ \
+
+;=======================================================
+;发出请求
+[@RequestUnMaster]
+#if
+  havemaster
+#act
+  unmaster requestunmaster
+;=======================================================
+;回应请求
+[@ResposeUnMaster]
+#if
+  havemaster
+#act
+  unmaster responseunmaster
+
+;===============================================
+;请求后显示的信息
+[@WateUnMaster]
+你已向对方发出请求，请耐心等待对方的答复。
+
+;===============================================
+;请求后对方显示的信息
+[@RevUnMaster]
+对方向你请求，你是否答应？ \ \
+<我愿意/@RequestUnMaster>
+<返回/@main>
+
+;===============================================
+
+[@ExeMasterFail]
+你都没师父，跑来做什么？ \ \
+[返回/@main]
+
+;==============================================
+;强行
+[@fUnMaster]
+#if
+  checkitem 金条 1
+  havemaster
+#act
+  take 金条 1
+  unmaster requestunmaster force
+#elsesay
+要收一根金条的手续费，你没有金条，\
+<确定/@exit>
+;==============================================
+;完成后的提示信息
+[@UnMasterEnd]
+呵呵，你已经脱

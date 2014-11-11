@@ -1,0 +1,321 @@
+;1.76仿盛大基础版本
+[@MAIN]
+<我想结婚/@marry>\
+<我想离婚/@unmarry>\ \
+<离开/@EXIT>\ \ \ \ \
+
+[@marry]
+求婚者必须是男性且拥有求婚戒指，\
+你准备好求婚了吗？\ \
+<准备好了/@agree>\
+<下次再来/@EXIT>\ \ \
+<返回/@MAIN>
+
+[@agree]
+#IF
+   checkmarry
+#ACT 
+   BREAK
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+#IF
+  checkposemarry
+#SAY
+对方已经结过婚了，是不是想犯重婚罪呀！！！\ \
+<返回/@MAIN>
+#ACT
+  BREAK 
+
+#IF
+   gender man
+#ELSESAY
+只有男的向女的求婚，还没见过大姑娘向小伙子求婚的。\ \
+<返回/@MAIN>
+#elseact
+   BREAK 
+
+
+#IF
+  checkposegender 男
+#SAY
+你变态呀！！！想搞同性恋！！！ \ \
+<返回/@MAIN>
+#ACT
+  BREAK 
+
+#IF
+   CHECKPOSEDIR 2
+#ELSESAY
+你们二个面对面站好呀，不要乱动。\ \
+<返回/@MAIN>
+#elseact
+  BREAK 
+
+#IF
+  CHECKLEVELEX > 40
+#ELSESAY
+结婚要求你的等级必须40级或以上，小伙子努力练好级再来找我。\ \
+<返回/@MAIN>
+#elseact
+  BREAK
+#IF
+  CHECKPOSELEVEL > 34
+#ELSESAY
+你的对象还没成年，等她长大点再来吧！小伙子不要心急嘛！\ \
+<返回/@MAIN>
+#elseact
+  BREAK
+#IF 
+   CHECKITEMw 求婚戒指 1
+#ELSESAY
+你没求婚戒指，弄到求婚戒指再来找我吧！！！\ \
+<返回/@MAIN>
+#elseact
+   BREAK 
+
+#IF
+#ACT
+   TAKEw 求婚戒指 1
+   marry 
+
+ 
+
+[@StartMarry]
+#IF
+   checkmarry
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+#ACT
+   BREAK 
+
+#IF
+   gender man
+#ACT
+   BREAK
+#SAY
+婚礼现在正式开始。\ \
+你愿意娶对方为妻，并照顾她一生一世吗？\ \
+<我愿意/@RequestMarry>
+
+#IF
+   gender
+#ACT
+   BREAK
+#SAY
+婚礼现在正式开始。\ \
+请耐心等待你心爱的人向你求婚\ \ 
+
+
+[@RequestMarry]
+#IF
+   checkmarry
+#ACT
+   BREAK
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+
+#IF
+#ACT
+  marry REQUESTmarry
+[@WateMarry]
+你已向对方求婚，请耐心等待对方的答复。
+
+[@RevMarry]
+#IF
+   checkmarry
+#ACT
+   BREAK
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+
+#IF
+#SAY
+对方向你求婚，你是否答应嫁给他？ \ \
+<我愿意/@ResposeMarry> \
+<我不愿意/@ResposeMarryFail>
+[@ResposeMarry]
+#IF
+   checkmarry
+#ACT
+   BREAK
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+
+#IF
+#ACT
+marry responsemarry ok
+Gmexecute showeffect 84
+DELAYGOTO 5 @yanhua
+[@ResposeMarryFail]
+#IF
+   checkmarry
+#ACT
+   BREAK
+#SAY
+你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \
+<返回/@MAIN>
+
+#IF
+#ACT
+  marry responsemarry fail
+[@EndMarry]
+你们二个已经成为了一对全法夫妻了。\ \
+<关闭/@EXIT>
+[@EndMarryFail]
+结婚失败！\ \
+<关闭/@EXIT>
+
+
+[@MarryDirErr]
+对方没站好位置
+
+[@MarryCheckDir]
+请站好位置\\
+
+[@HumanTypeErr]
+你变态呀，既然选择一个非人类作为结婚对象。
+
+[@MarrySexErr]
+你变态呀，既然同性恋。
+;=================yanhua==================
+[@yanhua]
+#IF
+#ACT
+Gmexecute showeffect 83
+DELAYGOTO 2000 @yanhua1
+
+[@yanhua1]
+#IF
+#ACT
+Gmexecute showeffect 82
+DELAYGOTO 2000 @yanhua2
+
+[@yanhua2]
+#IF
+#ACT
+Gmexecute showeffect 81
+DELAYGOTO 2000 @yanhua3
+
+[@yanhua3]
+#IF
+#ACT
+Gmexecute showeffect 80
+DELAYGOTO 2000 @yanhua4
+
+[@yanhua4]
+#IF
+#ACT
+Gmexecute showeffect 79
+DELAYGOTO 2000 @yanhua5
+
+[@yanhua5]
+#IF
+#ACT
+Gmexecute showeffect 78
+
+
+;==========================================
+;离婚开始
+[@unmarry]
+#IF
+   checkmarry
+#ACT
+   unmarry
+#ELSESAY
+你都没结婚离什么婚？？\ \
+<返回/@MAIN>
+
+ 
+
+;=======================================================
+;双方离婚时没面对面站好显示的信息
+[@UnMarryCheckDir]
+要离婚是吧？离婚是二个人的事，必须二个人对面对站好位置，\
+如果人来不了你只能选择强行离婚姻了。\ \
+<我要强行离婚/@fUnMarry>\
+<返回/@MAIN>
+;=======================================================
+;对面位置不是人物时显示的信息
+[@UnMarryTypeErr]
+你对面站了个什么东西，怎么不太象人来的。\ \
+<返回/@MAIN>
+
+;=======================================================
+;开始离婚程序后，双方显示的信息
+[@StartUnMarry]
+#IF
+   gender man
+#ACT
+   BREAK
+#SAY
+是否确定真的要与你共事多年的妻子离婚吗？\ \
+<确定/@RequestUnMarry>
+
+#IF
+  gender
+#SAY
+你的老公现在向我请求离婚，是不是愿意协议离婚？ \ \
+<确定/@RequestUnMarry>
+#ACT
+  BREAK 
+
+;=======================================================
+;发出离婚请求
+[@RequestUnMarry]
+#IF
+  checkmarry
+#ACT
+  unmarry REQUESTunmarry
+;=======================================================
+;回应离婚请求
+[@ResposeUnMarry]
+#IF
+  checkmarry
+#ACT
+  unmarry responseunmarry 
+
+;===============================================
+;请求离婚后显示的信息
+[@WateUnMarry]
+你已向对方发出离婚请求，请耐心等待对方的答复。
+
+;===============================================
+;请求离婚后对方显示的信息
+[@RevUnMarry]
+对方向你离婚请求，你是否答应离婚？ \ \
+<我愿意/@RequestUnMarry>
+<返回/@MAIN>
+
+;===============================================
+;没结过婚的人点离婚后出的提示信息
+[@ExeMarryFail]
+你都没结过婚，跑来做什么？ \ \
+[返回/@MAIN]
+
+;==============================================
+;强行离婚
+[@fUnMarry]
+#IF
+  CHECKITEM 金条 1
+  checkmarry
+#ACT
+  TAKE 金条 1
+  unmarry REQUESTunmarry force
+#ELSESAY
+要收一根金条的手续费，你没有金条，\
+我不能让你离婚。\
+<确定/@EXIT>
+;==============================================
+;离婚完成后的提示信息
+[@UnMarryEnd]
+呵呵，你已经脱离苦海了！！！ \ \
+<退出/@EXIT>
+[@asktime]
+你调查结婚时间的请求已发出，\
+请稍后。\
+<确定/@EXIT>

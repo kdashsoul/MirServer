@@ -1,0 +1,6 @@
+(@buy @sell @repair @s_repair)
+%100
++22
++23
+[@main]
+#CALL [商人\戒指店.txt] @戒指店

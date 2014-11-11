@@ -1,0 +1,805 @@
+[@×æÂêË¢¹Ö]
+#IF
+checkhum D504 1
+CheckRangeMonCount D504 215 182 200 < 140
+#ACT
+PARAM1 D504
+PARAM2 215
+PARAM3 182
+MonGen ×æÂê¹­¼ıÊÖ3 8 250
+MonGen ×æÂêÎÀÊ¿3 8 250
+MonGen ×æÂêÎÀÊ¿00 8 250
+MonGen ×æÂêµñÏñ3 8 250
+MonGen ×æÂêµñÏñ   6 250
+MonGen ×æÂê¹­¼ıÊÖ 6 250
+MonGen ×æÂêÎÀÊ¿   6 250
+MonGen Ğ¨¶ê   8 250
+MonGen ´óÀÏÊó   8 250
+break
+#IF
+checkhum D504 1
+CheckRangeMonCount D504 200 200 200 < 140
+#ACT
+PARAM1 D504
+PARAM2 200
+PARAM3 200
+MonGen ×æÂê¹­¼ıÊÖ3 8 250
+MonGen ×æÂêÎÀÊ¿3 8 250
+MonGen ×æÂêÎÀÊ¿00 8 250
+MonGen ×æÂêµñÏñ3 8 250
+MonGen ×æÂêµñÏñ   6 250
+MonGen ×æÂê¹­¼ıÊÖ 6 250
+MonGen ×æÂêÎÀÊ¿   6 250
+MonGen Ğ¨¶ê   8 250
+MonGen ´óÀÏÊó   8 250
+break
+#IF
+checkhum D504 1
+CheckRangeMonCount D504 225 175 200 < 140
+#ACT
+PARAM1 D504
+PARAM2 225
+PARAM3 175
+MonGen ×æÂê¹­¼ıÊÖ3 8 250
+MonGen ×æÂêÎÀÊ¿3 8 250
+MonGen ×æÂêÎÀÊ¿00 8 250
+MonGen ×æÂêµñÏñ3 8 250
+MonGen ×æÂêµñÏñ   6 250
+MonGen ×æÂê¹­¼ıÊÖ 6 250
+MonGen ×æÂêÎÀÊ¿   6 250
+MonGen Ğ¨¶ê   8 250
+MonGen ´óÀÏÊó   8 250
+break
+#IF
+checkhum D505 1
+CheckRangeMonCount D505 100 100 250 < 110
+#ACT
+PARAM1 D505
+PARAM2 100
+PARAM3 100
+MonGen ×æÂê¹­¼ıÊÖ3 7 200
+MonGen ×æÂêÎÀÊ¿3 20 200
+MonGen ×æÂêÎÀÊ¿00 4 200
+MonGen ×æÂêµñÏñ3 20 200
+MonGen ×æÂêµñÏñ   10 200
+MonGen ×æÂê¹­¼ıÊÖ 10 200
+MonGen ×æÂêÎÀÊ¿   10 200
+MonGen Ğ¨¶ê   10 200
+break
+#IF
+checkhum D505 1
+CheckRangeMonCount D505 154 172 250 < 120
+#ACT
+PARAM1 D505
+PARAM2 154
+PARAM3 172
+MonGen ×æÂê¹­¼ıÊÖ3 7 200
+MonGen ×æÂêÎÀÊ¿3 20 200
+MonGen ×æÂêÎÀÊ¿00 4 200
+MonGen ×æÂêµñÏñ3 20 200
+MonGen ×æÂêµñÏñ   10 200
+MonGen ×æÂê¹­¼ıÊÖ 10 200
+MonGen ×æÂêÎÀÊ¿   10 200
+MonGen Ğ¨¶ê   10 200
+break
+#IF
+checkhum D5072 1
+CheckRangeMonCount D5072 50 50 100 < 100
+#ACT
+PARAM1 D5072
+PARAM2 50
+PARAM3 50
+MonGen ×æÂê¹­¼ıÊÖ3 10 100
+MonGen ×æÂêÎÀÊ¿3 16 100
+MonGen ×æÂêÎÀÊ¿00 7 100
+MonGen ×æÂêµñÏñ3 16 100
+MonGen ×æÂêµñÏñ   10 100
+MonGen ×æÂê¹­¼ıÊÖ 8 100
+MonGen ×æÂêÎÀÊ¿   10 100
+MonGen Ğ¨¶ê   10 100
+break
+#IF
+checkhum D5073 1
+CheckRangeMonCount D5073 50 50 100 < 100
+#ACT
+PARAM1 D5073
+PARAM2 50
+PARAM3 50
+MonGen ×æÂê¹­¼ıÊÖ3 5 100
+MonGen ×æÂêÎÀÊ¿3 13 100
+MonGen ×æÂêÎÀÊ¿00 10 100
+MonGen ×æÂêµñÏñ3 13 100
+MonGen ×æÂêµñÏñ   8 100
+MonGen ×æÂê¹­¼ıÊÖ 8 100
+MonGen ×æÂêÎÀÊ¿   8 100
+MonGen Ğ¨¶ê   15 100
+break
+#IF
+checkhum D5074 1
+CheckRangeMonCount D5074 50 50 100 < 100
+#ACT
+PARAM1 D5074
+PARAM2 50
+PARAM3 50
+MonGen ×æÂê¹­¼ıÊÖ3 13 100
+MonGen ×æÂêÎÀÊ¿3 13 100
+MonGen ×æÂêÎÀÊ¿00 4 100
+MonGen ×æÂêµñÏñ3 13 100
+MonGen ×æÂêµñÏñ   8 100
+MonGen ×æÂê¹­¼ıÊÖ 8 100
+MonGen ×æÂêÎÀÊ¿   8 100
+MonGen Ğ¨¶ê   4 100
+MonGen ´óÀÏÊó   13 100
+break
+#IF
+checkhum D5074 1
+CheckRangeMonCount D5074 73 22 100 < 20
+#ACT
+PARAM1 D5074
+PARAM2 73
+PARAM3 22
+MonGen Ğ¨¶ê   4 100
+break
+
+;=====================================================================
+[@òÚò¼Ë¢¹Ö]
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 40 27 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 40
+PARAM3 27
+MonGen òÚò¼   7 80
+MonGen ºÚÉ«¶ñÇù   3 80
+MonGen ÌøÌø·ä   7 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 18 166 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 18
+PARAM3 166
+MonGen òÚò¼   3 80
+MonGen ºÚÉ«¶ñÇù   3 80
+MonGen ÌøÌø·ä   7 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 161 208 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 161
+PARAM3 208
+MonGen òÚò¼   7 80
+MonGen ºÚÉ«¶ñÇù   3 80
+MonGen ÌøÌø·ä   4 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 84 104 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 84
+PARAM3 104
+MonGen òÚò¼   7 80
+MonGen ¾ŞĞÍÈä³æ   4 80
+MonGen ÌøÌø·ä   3 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 187 36 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 187
+PARAM3 36
+MonGen òÚò¼   4 80
+MonGen ¾ŞĞÍÈä³æ   7 80
+MonGen ºÚÉ«¶ñÇù   3 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 144 73 80 < 50
+#ACT
+PARAM1 D601
+PARAM2 144
+PARAM3 73
+MonGen òÚò¼   4 80
+MonGen ¾ŞĞÍÈä³æ   7 80
+MonGen ºÚÉ«¶ñÇù   3 80
+break
+#IF
+checkhum D601 1
+CheckRangeMonCount D601 10 100 150 < 150
+#ACT
+PARAM1 D601
+PARAM2 10
+PARAM3 100
+MonGen òÚò¼   7 80
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 60 47 60 < 10
+#ACT
+PARAM1 D602
+PARAM2 60
+PARAM3 47
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 78 167 60 < 10
+#ACT
+PARAM1 D602
+PARAM2 78
+PARAM3 167
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 101 101 60 < 10
+#ACT
+PARAM1 D602
+PARAM2 101
+PARAM3 101
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 144 151 60 < 10
+#ACT
+PARAM1 D602
+PARAM2 144
+PARAM3 151
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 6 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 178 43 60 < 10
+#ACT
+PARAM1 D602
+PARAM2 178
+PARAM3 43
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 6 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D602 1
+CheckRangeMonCount D602 100 100 120 < 30
+#ACT
+PARAM1 D602
+PARAM2 100
+PARAM3 100
+MonGen òÚò¼ 6 100
+MonGen Ç¯³æ 6 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D603 1
+CheckRangeMonCount D603 100 100 120 < 20
+#ACT
+PARAM1 D603
+PARAM2 100
+PARAM3 100
+MonGen òÚò¼ 6 100
+MonGen Ç¯³æ 6 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D603 1
+CheckRangeMonCount D603 60 150 70 < 10
+#ACT
+PARAM1 D603
+PARAM2 150
+PARAM3 70
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D603 1
+CheckRangeMonCount D603 76 94 70 < 10
+#ACT
+PARAM1 D603
+PARAM2 76
+PARAM3 94
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D603 1
+CheckRangeMonCount D603 138 161 70 < 10
+#ACT
+PARAM1 D603
+PARAM2 138
+PARAM3 161
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 6 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D603 1
+CheckRangeMonCount D603 159 59 70 < 10
+#ACT
+PARAM1 D603
+PARAM2 159
+PARAM3 59
+MonGen òÚò¼ 7 60
+MonGen Ç¯³æ 6 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D604 1
+CheckRangeMonCount D604 35 42 70 < 16
+#ACT
+PARAM1 D604
+PARAM2 35
+PARAM3 42
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ÌøÌø·ä 6 60
+MonGen ºÚÉ«¶ñÇù 6 60
+break
+#IF
+checkhum D604 1
+CheckRangeMonCount D604 52 130 70 < 16
+#ACT
+PARAM1 D604
+PARAM2 52
+PARAM3 130
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ÌøÌø·ä 6 60
+MonGen ºÚÉ«¶ñÇù 6 60
+break
+#IF
+checkhum D604 1
+CheckRangeMonCount D604 118 112 70 < 15
+#ACT
+PARAM1 D604
+PARAM2 118
+PARAM3 112
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ÌøÌø·ä 6 60
+MonGen ºÚÉ«¶ñÇù 3 60
+break
+#IF
+checkhum D604 1
+CheckRangeMonCount D604 148 50 70 < 16
+#ACT
+PARAM1 D604
+PARAM2 148
+PARAM3 70
+MonGen òÚò¼ 6 60
+MonGen Ç¯³æ 3 60
+MonGen ÌøÌø·ä 6 60
+MonGen ºÚÉ«¶ñÇù 6 60
+break
+#IF
+checkhum D604 1
+CheckRangeMonCount D604 100 100 120 < 22
+#ACT
+PARAM1 D604
+PARAM2 100
+PARAM3 100
+MonGen òÚò¼ 6 100
+MonGen Ç¯³æ 3 100
+MonGen ÌøÌø·ä 6 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 100 100 120 < 22
+#ACT
+PARAM1 D605
+PARAM2 100
+PARAM3 100
+MonGen òÚò¼ 6 100
+MonGen Ç¯³æ 3 100
+MonGen ÌøÌø·ä 6 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 51 131 60 < 18
+#ACT
+PARAM1 D605
+PARAM2 51
+PARAM3 131
+MonGen òÚò¼ 6 50
+MonGen Ç¯³æ 3 50
+MonGen ÌøÌø·ä 6 50
+MonGen ºÚÉ«¶ñÇù 3 50
+MonGen ¾ŞĞÍÈä³æ 6 50
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 55 27 60 < 17
+#ACT
+PARAM1 D605
+PARAM2 55
+PARAM3 27
+MonGen òÚò¼ 6 50
+MonGen Ç¯³æ 3 50
+MonGen ÌøÌø·ä 6 50
+MonGen ºÚÉ«¶ñÇù 3 50
+MonGen ¾ŞĞÍÈä³æ 3 50
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 89 81 60 < 17
+#ACT
+PARAM1 D605
+PARAM2 89
+PARAM3 81
+MonGen òÚò¼ 6 50
+MonGen Ç¯³æ 3 50
+MonGen ÌøÌø·ä 6 50
+MonGen ºÚÉ«¶ñÇù 3 50
+MonGen ¾ŞĞÍÈä³æ 3 50
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 126 37 60 < 18
+#ACT
+PARAM1 D605
+PARAM2 126
+PARAM3 37
+MonGen òÚò¼ 6 50
+MonGen Ç¯³æ 3 50
+MonGen ÌøÌø·ä 6 50
+MonGen ºÚÉ«¶ñÇù 3 50
+MonGen ¾ŞĞÍÈä³æ 6 50
+break
+#IF
+checkhum D605 1
+CheckRangeMonCount D605 162 92 60 < 18
+#ACT
+PARAM1 D605
+PARAM2 162
+PARAM3 92
+MonGen òÚò¼ 6 50
+MonGen Ç¯³æ 3 50
+MonGen ÌøÌø·ä 6 50
+MonGen ºÚÉ«¶ñÇù 3 50
+MonGen ¾ŞĞÍÈä³æ 6 50
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 70 76 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 70
+PARAM3 76
+MonGen Ç¯³æ 5 70
+MonGen ÌøÌø·ä 7 70
+MonGen ºÚÉ«¶ñÇù 5 70
+MonGen ¾ŞĞÍÈä³æ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 79 220 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 79
+PARAM3 220
+MonGen Ç¯³æ 5 70
+MonGen ÌøÌø·ä 4 70
+MonGen òÚò¼ 5 70
+MonGen ¾ŞĞÍÈä³æ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 200 213 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 200
+PARAM3 213
+MonGen Ç¯³æ 5 70
+MonGen ÌøÌø·ä 4 70
+MonGen òÚò¼ 5 70
+MonGen ¾ŞĞÍÈä³æ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 210 72 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 210
+PARAM3 72
+MonGen Ç¯³æ 5 70
+MonGen ÌøÌø·ä 4 70
+MonGen òÚò¼ 5 70
+MonGen ¾ŞĞÍÈä³æ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 150 150 110 < 55
+#ACT
+PARAM1 D612
+PARAM2 150
+PARAM3 150
+MonGen Ç¯³æ 15 100
+MonGen òÚò¼ 15 100
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 19 39 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 19
+PARAM3 39
+MonGen òÚò¼ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 57 166 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 57
+PARAM3 166
+MonGen òÚò¼ 5 70
+break
+#IF
+checkhum D612 1
+CheckRangeMonCount D612 97 81 80 < 55
+#ACT
+PARAM1 D612
+PARAM2 97
+PARAM3 81
+MonGen òÚò¼ 5 70
+break
+#IF
+checkhum D613 1
+CheckRangeMonCount D613 50 50 120 < 60
+#ACT
+PARAM1 D613
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 10 100
+MonGen ÌøÌø·ä 3 100
+MonGen ¾ŞĞÍÈä³æ 3 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D614 1
+CheckRangeMonCount D614 50 50 120 < 70
+#ACT
+PARAM1 D614
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 10 100
+MonGen ÌøÌø·ä 3 100
+MonGen ¾ŞĞÍÈä³æ 3 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D615 1
+CheckRangeMonCount D615 50 50 120 < 70
+#ACT
+PARAM1 D615
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 10 100
+MonGen ÌøÌø·ä 3 100
+MonGen ¾ŞĞÍÈä³æ 3 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D616 1
+CheckRangeMonCount D616 50 50 120 < 70
+#ACT
+PARAM1 D616
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 10 100
+MonGen ÌøÌø·ä 3 100
+MonGen ¾ŞĞÍÈä³æ 3 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D617 1
+CheckRangeMonCount D617 50 50 120 < 70
+#ACT
+PARAM1 D617
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 10 100
+MonGen ÌøÌø·ä 3 100
+MonGen ¾ŞĞÍÈä³æ 3 100
+MonGen ºÚÉ«¶ñÇù 3 100
+MonGen òÚò¼0 3 100
+MonGen Ç¯³æ0 3 100
+MonGen ÌøÌø·ä0 3 100
+MonGen ºÚÉ«¶ñÇù0 3 100
+break
+#IF
+checkhum D618 1
+CheckRangeMonCount D618 50 50 110 < 100
+#ACT
+PARAM1 D618
+PARAM2 50
+PARAM3 50
+MonGen òÚò¼ 20 100
+MonGen Ç¯³æ 13 100
+MonGen ÌøÌø·ä 7 100
+MonGen ¾ŞĞÍÈä³æ 7 100
+MonGen ºÚÉ«¶ñÇù 8 100
+break
+#IF
+checkhum D618 1
+CheckRangeMonCount D618 19 39 80 < 100
+#ACT
+PARAM1 D618
+PARAM2 19
+PARAM3 39
+MonGen Ç¯³æ 4 70
+MonGen ÌøÌø·ä 3 70
+MonGen ¾ŞĞÍÈä³æ 3 70
+MonGen ºÚÉ«¶ñÇù 5 70
+break
+#IF
+checkhum D618 1
+CheckRangeMonCount D618 57 166 80 < 100
+#ACT
+PARAM1 D618
+PARAM2 57
+PARAM3 166
+MonGen Ç¯³æ 4 70
+MonGen ÌøÌø·ä 3 70
+MonGen ¾ŞĞÍÈä³æ 3 70
+MonGen ºÚÉ«¶ñÇù 5 70
+break
+#IF
+checkhum D618 1
+CheckRangeMonCount D618 178 127 80 < 100
+#ACT
+PARAM1 D618
+PARAM2 178
+PARAM3 127
+MonGen Ç¯³æ 4 70
+MonGen ÌøÌø·ä 3 70
+MonGen ¾ŞĞÍÈä³æ 3 70
+MonGen ºÚÉ«¶ñÇù 5 70
+break
+
+;=====================================================================
+[@µØÍ¼Çå¹Ö]
+#IF
+CheckMapHumanCount D504 < 1
+#ACT
+CLEARMAPMON D504
+#IF
+CheckMapHumanCount D505 < 1
+#ACT
+CLEARMAPMON D505
+#IF
+CheckMapHumanCount D5072 < 1
+#ACT
+CLEARMAPMON D5072
+#IF
+CheckMapHumanCount D5073 < 1
+#ACT
+CLEARMAPMON D5073
+#IF
+CheckMapHumanCount D5074 < 1
+#ACT
+CLEARMAPMON D5074
+#IF
+CheckMapHumanCount D601 < 1
+#ACT
+CLEARMAPMON D601
+#IF
+CheckMapHumanCount D602 < 1
+#ACT
+CLEARMAPMON D602
+#IF
+CheckMapHumanCount D603 < 1
+#ACT
+CLEARMAPMON D603
+#IF
+CheckMapHumanCount D604 < 1
+#ACT
+CLEARMAPMON D604
+#IF
+CheckMapHumanCount D605 < 1
+#ACT
+CLEARMAPMON D605
+#IF
+CheckMapHumanCount D612 < 1
+#ACT
+CLEARMAPMON D612
+#IF
+CheckMapHumanCount D613 < 1
+#ACT
+CLEARMAPMON D613
+#IF
+CheckMapHumanCount D614 < 1
+#ACT
+CLEARMAPMON D614
+#IF
+CheckMapHumanCount D615 < 1
+#ACT
+CLEARMAPMON D615
+#IF
+CheckMapHumanCount D616 < 1
+#ACT
+CLEARMAPMON D616
+#IF
+CheckMapHumanCount D617 < 1
+#ACT
+CLEARMAPMON D617
+#IF
+CheckMapHumanCount D618 < 1
+#ACT
+CLEARMAPMON D618
+break
+
+[@ÔçÉÏÌáÊ¾]
+#IF
+#act
+SENDMSG 1 Ç×°®µÄÍæ¼Ò£¬ÏÖÔÚÒÑ¾­ÊÇÔçÉÏÁË
+SENDMSG 1 ÓÎÏ·ËäÈ»ºÃÍæ£¬¿É±ğÍüÁË¹¤×÷ºÍÑ§Ï°µÄÊ±¼ä
+
+[@ÖĞÎçÌáÊ¾]
+#IF
+#act
+SENDMSG 1 Ç×°®µÄÍæ¼Ò£¬ÏÖÔÚÒÑ¾­ÊÇÖĞÎçÁË
+SENDMSG 1 ÓÎÏ·ËäÈ»ºÃÍæ£¬¿É±ğÍüÁË¶àÅãÅãÄãµÄÅóÓÑºÍ¼ÒÈË
+
+[@ÍíÉÏÌáÊ¾]
+#IF
+#act
+SENDMSG 1 Ç×°®µÄÍæ¼Ò£¬ÏÖÔÚÒÑ¾­ÊÇÍíÉÏÁË
+SENDMSG 1 ÓÎÏ·ËäÈ»ºÃÍæ£¬Ò²±ğÍüÁËÅãÅóÓÑºÍ¼ÒÈË³Ô¶ÙÍí·¹
+
+[@Áè³¿ÌáÊ¾]
+#IF
+#act
+SENDMSG 1 Ç×°®µÄÍæ¼Ò£¬ÏÖÔÚÒÑ¾­ÊÇÁè³¿ÁË
+SENDMSG 1 ÓÎÏ·ËäÈ»ºÃÍæ£¬Ò²±ğÍüÁËÊÇ²»ÊÇ¸ÃĞİÏ¢ÁË

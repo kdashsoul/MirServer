@@ -1,0 +1,8 @@
+#AutoRun NPC SEC 13 @祖玛刷怪
+#AutoRun NPC SEC 12 @蜈蚣刷怪
+#AutoRun NPC MIN 1 @地图清怪
+#AutoRun NPC RUNONDAY 7:00 @早上提示
+#AutoRun NPC RUNONDAY 12:00 @中午提示
+#AutoRun NPC RUNONDAY 18:00 @晚上提示
+#AutoRun NPC RUNONDAY 0:00 @凌晨提示
+

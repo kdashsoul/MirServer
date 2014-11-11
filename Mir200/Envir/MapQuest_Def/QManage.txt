@@ -1,0 +1,27 @@
+[@Login]
+#IF
+CHECKLEVELEX > 0
+#ACT
+#CALL [\游戏登陆\登陆脚本.txt] @登陆设置
+
+[@HeroLogin]
+#IF
+H.ISNEWHUMAN
+H.gender man
+#ACT
+H.give 木剑 1
+H.give 布衣(男) 1
+H.TakeOnitem 木剑 1
+H.TakeOnitem 布衣(男) 0
+SENDMSG 4 恭喜<$USERNAME>您的英雄领取了装备
+break
+#IF
+H.ISNEWHUMAN
+H.gender WOMAN
+#ACT
+H.give 木剑 1
+H.give 布衣(女) 1
+H.TakeOnitem 木剑 1
+H.TakeOnitem 布衣(女) 0
+SENDMSG 4 恭喜<$USERNAME>您的英雄领取了装备
+break
