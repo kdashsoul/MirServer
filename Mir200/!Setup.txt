@@ -137,7 +137,7 @@ XueLingCustodian2=蓝色水灵
 XueLingCustodian3=紫色暗灵
 XueLingCustodian4=黄色土灵
 [Setup]
-ItemNumber=11391527
+ItemNumber=11432987
 ItemNumberEx=1073741908
 ClientFile1=Mir.dat
 ClientFile2=mir.dat
@@ -922,7 +922,7 @@ WizardWalkTime=500
 TaoistWalkTime=500
 RecallHeroTime=60
 RecallDeputyHeroTime=300
-HeroNameColor=132
+HeroNameColor=241
 MaxAngryValue=10
 AddAngryValue=1
 DecFirDragonPoint=100

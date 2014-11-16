@@ -47,6 +47,7 @@ Temporary Items
 
 Mir200/Log/*
 Mir200/ChatLog/*
+Mir200/ConLog/*
 DBServer/Log/*
 LoginSrv/ChrLog/*
 LoginSrv/CountLog/*
